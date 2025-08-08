@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Full Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  
+  <style>
+    /* Fix all cards to same height */
+    .card {
+      height: 250px;
+      overflow: hidden;
+    }
+    /* Make images cover card area nicely */
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    /* Optional: zoom effect on hover */
+    .card:hover .gallery-img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Railings</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="py-5 bg-light" id="full-gallery">
+    <div class="container">
+      <h2 class="text-center mb-4">Full Gallery</h2>
+      <div class="row g-4">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image1.jpg" class="card-img-top gallery-img" alt="Gallery Image 1" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image2.jpg" class="card-img-top gallery-img" alt="Gallery Image 2" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image3.jpg" class="card-img-top gallery-img" alt="Gallery Image 3" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image4.jpg" class="card-img-top gallery-img" alt="Gallery Image 4" />
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image5.jpg" class="card-img-top gallery-img" alt="Gallery Image 5" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image6.jpg" class="card-img-top gallery-img" alt="Gallery Image 6" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image7.jpg" class="card-img-top gallery-img" alt="Gallery Image 7" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image8.jpg" class="card-img-top gallery-img" alt="Gallery Image 8" />
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image9.jpg" class="card-img-top gallery-img" alt="Gallery Image 9" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image10.jpg" class="card-img-top gallery-img" alt="Gallery Image 10" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image11.jpg" class="card-img-top gallery-img" alt="Gallery Image 11" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image12.jpg" class="card-img-top gallery-img" alt="Gallery Image 12" />
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image13.jpg" class="card-img-top gallery-img" alt="Gallery Image 13" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image14.jpg" class="card-img-top gallery-img" alt="Gallery Image 14" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image15.jpg" class="card-img-top gallery-img" alt="Gallery Image 15" />
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card shadow-sm">
+            <img src="images/image16.jpg" class="card-img-top gallery-img" alt="Gallery Image 16" />
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center my-4">
+  <a href="index.html" class="btn btn-custom btn-lg animate__animated animate__fadeInUp animate__delay-2s">
+    Go Back to Home
+  </a>
+</div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

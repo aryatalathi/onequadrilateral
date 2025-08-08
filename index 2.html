@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Railings Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top dark-navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="images/logo.jpg" alt="Logo" height="40" class="me-2" />
+      <span class="fw-bold">Onequadrilateral</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about-us-section">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home Section -->
+<section id="home" class="vh-100 d-flex align-items-center position-relative overflow-hidden">
+  <img src="images/image14.jpg" class="w-100 h-100 position-absolute top-0 start-0 home-bg-img"/>
+  <div class="position-absolute top-0 start-0 w-100 h-100 home-bg-overlay"></div>
+  <div class="container text-white position-relative text-center">
+    <h1 class="display-4 fw-bold animate__animated animate__fadeInDown">Quality Railings, Built to Last</h1>
+    <p class="lead mb-4 animate__animated animate__fadeInUp animate__delay-1s">Elegant, durable, and crafted with precision for your home or business.</p>
+    <a href="#products" class="btn btn-custom btn-lg animate__animated animate__fadeInUp animate__delay-2s">Explore Our Products</a>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about-us-section" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" style="color: #7A7979;">About Us</h2>
+    <div class="row align-items-stretch single-about-card">
+      <div class="col-md-6 p-0">
+        <img src="images/home4.jpg" class="img-fluid hover-zoom-img h-100 w-100"/>
+      </div>
+      <div class="col-md-6 d-flex flex-column justify-content-center">
+        <div class="about-text px-4 py-4">
+          <h2>Affordable Quality, Innovation & Trust</h2>
+          <p>Our railings combine high-grade materials with expert craftsmanship at a price that won’t break the bank...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Products Section -->
+<section id="products" class="py-5 bg-light position-relative">
+  <img src="images/bg.jpg" class="position-absolute w-100 h-100" style="object-fit:cover; filter: blur(5px) brightness(0.7); top:0; left:0; z-index:0;">
+  <div class="container-fluid px-4 position-relative" style="z-index:1;">
+    <h2 class="text-center mb-5" style="color: #fff;">Our Products</h2>
+    <div class="row g-4">
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="product-card">
+          <img src="images/image1.jpg" class="product-img">
+          <div class="overlay"><h5>Stainless Steel Railings</h5><p>Elegant and durable</p></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="product-card">
+          <img src="images/image2.jpg" class="product-img">
+          <div class="overlay"><h5>Glass Railings</h5><p>Sleek and modern</p></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="product-card">
+          <img src="images/image3.jpg" class="product-img">
+          <div class="overlay"><h5>Wooden Handrails</h5><p>Timeless elegance</p></div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="product-card">
+          <img src="images/image4.jpg" class="product-img">
+          <div class="overlay"><h5>Balcony Railings</h5><p>Safe and stylish</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="container py-5">
+  <h2 class="text-center mb-4">Featured Gallery</h2>
+  <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- First Slide -->
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-6 col-md-3"><img src="images/image1.jpg" class="w-100" style="height:200px;object-fit:cover;"></div>
+          <div class="col-6 col-md-3"><img src="images/image2.jpg" class="w-100" style="height:200px;object-fit:cover;"></div>
+          <div class="col-6 col-md-3"><img src="images/image3.jpg" class="w-100" style="height:200px;object-fit:cover;"></div>
+          <div class="col-6 col-md-3"><img src="images/image4.jpg" class="w-100" style="height:200px;object-fit:cover;"></div>
+        </div>
+      </div>
+      <!-- Add more slides here -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-5" style="background: linear-gradient(to right, #bfbfbf, #e0e0e0);">
+  <div class="container">
+    <h2 class="text-center mb-5">Contact Us</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="p-4 shadow rounded contact-form-box">
+          <form>
+            <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+            <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+            <textarea class="form-control mb-3" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Floating Request a Quote Button -->
+<button id="quoteBtn" class="btn btn-warning" style="position:fixed;bottom:20px;right:20px;z-index:1000;border-radius:50px;padding:10px 20px;">Request a Quote</button>
+
+<!-- Quote Modal -->
+<div class="modal fade" id="quoteModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5 class="modal-title">Request a Quote</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
+      <div class="modal-body">
+        <form id="quoteForm">
+          <input type="text" id="quoteName" class="form-control mb-3" placeholder="Name" required>
+          <input type="email" id="quoteEmail" class="form-control mb-3" placeholder="Email" required>
+          <input type="text" id="quotePhone" class="form-control mb-3" placeholder="Phone" required>
+          <input type="text" id="quoteProduct" class="form-control mb-3" placeholder="Product" required>
+          <textarea id="quoteMessage" class="form-control mb-3" rows="3" placeholder="Message"></textarea>
+          <button type="submit" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("quoteBtn").addEventListener("click", function() {
+    new bootstrap.Modal(document.getElementById("quoteModal")).show();
+  });
+
+  document.getElementById("quoteForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const formData = {
+      name: document.getElementById("quoteName").value,
+      email: document.getElementById("quoteEmail").value,
+      phone: document.getElementById("quotePhone").value,
+      product: document.getElementById("quoteProduct").value,
+      message: document.getElementById("quoteMessage").value
+    };
+    fetch("YOUR_GOOGLE_APPS_SCRIPT_URL", {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData)
+    }).then(() => {
+      alert("Quote Request Submitted!");
+      document.getElementById("quoteForm").reset();
+      bootstrap.Modal.getInstance(document.getElementById("quoteModal")).hide();
+    });
+  });
+</script>
+</body>
+</html>
