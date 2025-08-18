@@ -156,8 +156,10 @@
 
       <!-- Card 1 -->
       <div class="col-12 col-sm-6 col-lg-3">
-        <div class="product-card position-relative overflow-hidden rounded shadow-sm h-100">
-          <img src="images/image18.jpg" alt="Stainless Steel Railings" class="product-img w-100 h-100">
+        <div class="product-card position-relative overflow-hidden rounded shadow-sm">
+          <img src="images/image18.jpg" alt="Stainless Steel Railings" 
+               class="product-img w-100" 
+               style="height: 250px; object-fit: cover; border-radius: 6px;">
           <div class="overlay d-flex flex-column justify-content-center align-items-center">
             <h5>Glass Railings</h5>
             <p>Elegant, durable, rust-resistant for modern exteriors.</p>
@@ -167,8 +169,10 @@
 
       <!-- Card 2 -->
       <div class="col-12 col-sm-6 col-lg-3">
-        <div class="product-card position-relative overflow-hidden rounded shadow-sm h-100">
-          <img src="images/image19.jpg" alt="Glass Railings" class="product-img w-100 h-100">
+        <div class="product-card position-relative overflow-hidden rounded shadow-sm">
+          <img src="images/image19.jpg" alt="Glass Railings" 
+               class="product-img w-100" 
+               style="height: 250px; object-fit: cover; border-radius: 6px;">
           <div class="overlay d-flex flex-column justify-content-center align-items-center">
             <h5>Glass Railings</h5>
             <p>Sleek and minimal with high safety standards and clear view.</p>
@@ -178,8 +182,10 @@
 
       <!-- Card 3 -->
       <div class="col-12 col-sm-6 col-lg-3">
-        <div class="product-card position-relative overflow-hidden rounded shadow-sm h-100">
-          <img src="images/image20.jpg" alt="Wooden Handrails" class="product-img w-100 h-100">
+        <div class="product-card position-relative overflow-hidden rounded shadow-sm">
+          <img src="images/image20.jpg" alt="Wooden Handrails" 
+               class="product-img w-100" 
+               style="height: 250px; object-fit: cover; border-radius: 6px;">
           <div class="overlay d-flex flex-column justify-content-center align-items-center">
             <h5>Picket Handrails</h5>
             <p>Timeless craftsmanship offering warmth and classic appeal.</p>
@@ -189,8 +195,10 @@
 
       <!-- Card 4 -->
       <div class="col-12 col-sm-6 col-lg-3">
-        <div class="product-card position-relative overflow-hidden rounded shadow-sm h-100">
-          <img src="images/image4.jpg" alt="Balcony Railings" class="product-img w-100 h-100">
+        <div class="product-card position-relative overflow-hidden rounded shadow-sm">
+          <img src="images/image4.jpg" alt="Balcony Railings" 
+               class="product-img w-100" 
+               style="height: 250px; object-fit: cover; border-radius: 6px;">
           <div class="overlay d-flex flex-column justify-content-center align-items-center">
             <h5>Picket Railings</h5>
             <p>Safe and stylish solutions for your balconies and outdoor spaces.</p>
@@ -201,6 +209,7 @@
     </div>
   </div>
 </section>
+
 
 
   <!-- Rotating 4-Image Gallery Carousel Section -->
@@ -385,23 +394,44 @@
       </div>
     </div>
 
-    <!-- Contact Info with Icons -->
-    <div class="row justify-content-center mt-5">
-      <div class="col-md-4 text-center">
-        <i class="bi bi-envelope-fill fs-3" style="color: #db9c5d;"></i>
-        <p class="mt-2">sales@one-quad.com</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <i class="bi bi-telephone-fill fs-3" style="color: #db9c5d;"></i>
-        <p class="mt-2">+1 (226) 237-8979</p>
-      </div>
-      <div class="col-md-4 text-center">
-        <i class="bi bi-instagram fs-3" style="color: #db9c5d;"></i>
-        <p class="mt-2">@onequadrilateral</p>
-      </div>
-    </div>
+   <!-- Contact Info with Icons -->
+<div class="row justify-content-center mt-5">
+  <!-- Email -->
+  <div class="col-md-4 text-center">
+    <a href="mailto:sales@one-quad.com" style="text-decoration: none; color: inherit;">
+      <i class="bi bi-envelope-fill fs-3" style="color: #db9c5d;"></i>
+    </a>
+    <p class="mt-2">
+      <a href="mailto:sales@one-quad.com" style="text-decoration: none; color: inherit;">
+        sales@one-quad.com
+      </a>
+    </p>
   </div>
-</section>
+
+  <!-- Phone -->
+  <div class="col-md-4 text-center">
+    <a href="tel:+12262378979" style="text-decoration: none; color: inherit;">
+      <i class="bi bi-telephone-fill fs-3" style="color: #db9c5d;"></i>
+    </a>
+    <p class="mt-2">
+      <a href="tel:+12262378979" style="text-decoration: none; color: inherit;">
+        +1 (226) 237-8979
+      </a>
+    </p>
+  </div>
+
+  <!-- Instagram -->
+  <div class="col-md-4 text-center">
+    <a href="https://www.instagram.com/onequadrilateral" target="_blank" style="text-decoration: none; color: inherit;">
+      <i class="bi bi-instagram fs-3" style="color: #db9c5d;"></i>
+    </a>
+    <p class="mt-2">
+      <a href="https://www.instagram.com/onequadrilateral" target="_blank" style="text-decoration: none; color: inherit;">
+        @onequadrilateral
+      </a>
+    </p>
+  </div>
+</div>
 
 
 <!-- Floating Request a Quote Button -->
@@ -413,7 +443,7 @@
     <div class="modal-content">
       <div class="modal-header"><h5 class="modal-title">Request a Quote</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
       <div class="modal-body">
-        <form id="quoteForm" enctype="multipart/form-data">
+        <form id="quoteForm" enctype="multipart/form-data" method="POST">
             <input type="text" id="quoteName" name="quoteName" class="form-control mb-3" placeholder="Name" required>
             <input type="email" id="quoteEmail" name="quoteEmail" class="form-control mb-3" placeholder="Email" required>
             <input type="text" id="quotePhone" name="quotePhone" class="form-control mb-3" placeholder="Phone" required>
@@ -421,7 +451,7 @@
             <textarea id="quoteMessage" name="quoteMessage" class="form-control mb-3" rows="3" placeholder="Message"></textarea>
             
             <!-- File Upload -->
-            <input type="file" id="quoteFile" name="quoteFile" class="form-control mb-3" accept=".jpg,.jpeg,.png,.pdf">
+            <input type="file" id="quoteFile" name="quoteFile" class="form-control mb-3" accept=".jpg,.jpeg,.png,.pdf" multiple>
 
             <button type="submit" class="btn btn-primary w-100">Submit</button>
         </form>
