@@ -370,6 +370,8 @@
       <div class="col-lg-6 col-md-8">
         <div class="p-4 shadow rounded contact-form-box">
           <form action="https://formsubmit.co/yash.shaha97@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://www.one-quad.com/thank-you.html">
+            <input type="hidden" name="_captcha" value="false">
             <div class="mb-3">
               <label for="contact-name" class="form-label">Name</label>
               <input
@@ -403,8 +405,6 @@
                 required
               ></textarea>
             </div>
-            <input type="hidden" name="_next" value="https://www.one-quad.com/thank-you.html">
-            <input type="hidden" name="_captcha" value="false">
             <div class="text-center">
               <button type="submit" class="btn contact-btn">Send Message</button>
             </div>
@@ -459,16 +459,14 @@
       <div class="modal-header"><h5 class="modal-title">Request a Quote</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div>
       <div class="modal-body">
         <form action="https://formsubmit.co/yash.shaha97@gmail.com" method="POST" enctype="multipart/form-data" id="quoteForm">
+          <input type="hidden" name="_next" value="https://www.one-quad.com/thank-you.html">
+          <input type="hidden" name="_captcha" value="false">
           <input type="text" name="name" class="form-control mb-3" placeholder="Name" required>
           <input type="email" name="email" class="form-control mb-3" placeholder="Email" required>
           <input type="text" name="phone" class="form-control mb-3" placeholder="Phone" required>
           <input type="text" name="product" class="form-control mb-3" placeholder="Product" required>
           <textarea name="message" class="form-control mb-3" rows="3" placeholder="Message"></textarea>
           <input type="file" name="attachment" class="form-control mb-3" accept=".jpg,.jpeg,.png,.pdf" multiple>
-          <!-- Optional: Redirect after submit -->
-          <input type="hidden" name="_next" value="https://www.one-quad.com/thank-you.html">
-          <!-- Optional: Disable captcha -->
-          <input type="hidden" name="_captcha" value="false">
           <button type="submit" class="btn btn-primary w-100">Submit</button>
         </form>
       </div>
